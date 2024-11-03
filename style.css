@@ -88,3 +88,18 @@ main p {
     height: auto;
     border-radius: 8px;
 }
+.click-message {
+    font-size: 1.2rem;
+    color: #e63946;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
