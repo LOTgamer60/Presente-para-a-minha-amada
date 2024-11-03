@@ -1,9 +1,12 @@
-document.getElementById("heart-button").addEventListener("click", function() {
-    // Adiciona a classe 'fade-out' ao body
-    document.body.classList.add("fade-out");
+// Mostra o alerta ao carregar a página
+window.onload = function() {
+    alert("Clique no coração para continuar ❤️");
+};
 
-    // Espera o tempo da transição (0.5s) antes de redirecionar para a nova página
+// Evento para mudar de página ao clicar no coração
+document.getElementById("heart-button").addEventListener("click", function() {
+    document.body.classList.add("fade-out");
     setTimeout(function() {
         window.location.href = "surpresa.html";
-    }, 500); // Tempo em milissegundos
+    }, 500); // Tempo da transição
 });
